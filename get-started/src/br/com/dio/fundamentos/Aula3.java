@@ -38,7 +38,7 @@ public class Aula3 {
         System.out.print("Você é emancipado? ");
         var isEmancipated = input.nextBoolean();
 
-        boolean canDrive = isLegalAge || isEmancipated;
+        boolean canDrive = isLegalAge || isEmancipated && age >= 16;
         System.out.printf("Você pode dirigir? %s \n", canDrive);
     }
 }
