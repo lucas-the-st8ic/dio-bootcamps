@@ -10,6 +10,8 @@ public class Aula3 {
         // operador de diferença != (x é diferente de y?/ x != y)
         // ! operador de negação inverte o valor booleano, se for verdadeiro vira falso,
         // se for falso vira verdadeiro
+        // < menor que, > maior que, <= menor ou igual, >= maior ou igual
+        //
 
         var input = new Scanner(System.in);
         System.out.print("Quanto é 2 + 2 ? ");
@@ -22,11 +24,21 @@ public class Aula3 {
         var isWrong = result != 4;
         System.out.printf("O resultado é 4, você errou? %s ", isWrong);*/
 
+/*      System.out.print("\nQuantos anos você tem? ");
+        var age = input.nextInt();
+        var isLegalAge = age >= 18;
+        System.out.printf("Você pode dirigir? %s \n", isLegalAge);*/
+
+        System.out.print("\n===========");
+
         System.out.print("\nQuantos anos você tem? ");
         var age = input.nextInt();
-
         var isLegalAge = age >= 18;
 
-        System.out.printf("Você pode dirigir? %s \n", isLegalAge);
+        System.out.print("Você é emancipado? ");
+        var isEmancipated = input.nextBoolean();
+
+        boolean canDrive = isLegalAge || isEmancipated;
+        System.out.printf("Você pode dirigir? %s \n", canDrive);
     }
 }
