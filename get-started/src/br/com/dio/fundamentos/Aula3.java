@@ -10,8 +10,9 @@ public class Aula3 {
         // operador de diferença != (x é diferente de y?/ x != y)
         // ! operador de negação inverte o valor booleano, se for verdadeiro vira falso,
         // se for falso vira verdadeiro
-        // < menor que, > maior que, <= menor ou igual, >= maior ou igual
-        //
+        // < menor que, > maior que, <= menor ou igual que,
+        // >= maior ou igual que
+
 
         var input = new Scanner(System.in);
         System.out.print("Quanto é 2 + 2 ? ");
@@ -42,3 +43,4 @@ public class Aula3 {
         System.out.printf("Você pode dirigir? %s \n", canDrive);
     }
 }
+
