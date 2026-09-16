@@ -1,7 +1,5 @@
 package br.com.dio.fundamentos;
 
-import java.util.Scanner;
-
 public class Aula4_2 {
     static void main(String[] args) {
         // PRECEDENCIA
@@ -15,6 +13,19 @@ public class Aula4_2 {
         // 5 + 90 = 95
         //95 - 2 = 93
 
-        System.out.print(operacao);
+        System.out.println(operacao);
+
+        //OPERADORES ARITMETICOS DA CLASSE Math
+
+        double number = 20;
+        double secondNumber = 10;
+        var raiz = Math.sqrt(number);
+        System.out.println("Raiz quadrada de " +number
+        +" é: " +raiz);
+
+        var potencia = Math.pow(number, 2);
+        System.out.println("Potência de " +number
+                +" é: " +potencia);
+
     }
 }
