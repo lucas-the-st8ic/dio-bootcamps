@@ -15,13 +15,17 @@ public class Aula5 {
         var binaryResult = Integer.toBinaryString(result);
         System.out.printf("%s | %s = %s (representação binária %s)\n", value1, value2, result, binaryResult);
 
+        var result2 = value1 & value2;
+        var binaryResult2 = Integer.toBinaryString(result2);
+        System.out.printf("%s & %s = %s (representação binária %s)\n", value1, value2, result2, binaryResult2);
+
+
     }
 
     /*
     0 = false
     1 = true
-    110 =
-    101 =
+
 
 */
 
