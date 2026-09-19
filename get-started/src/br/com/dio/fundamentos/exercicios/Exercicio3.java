@@ -3,6 +3,9 @@ package br.com.dio.fundamentos.exercicios;
 import java.util.Scanner;
 
 public class Exercicio3 {
+    /*Escreva um código que receba a base e a altura de um retângulo,
+        calcule sua área e exiba na tela
+                -Fórmula: área=base X altura*/
     static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
