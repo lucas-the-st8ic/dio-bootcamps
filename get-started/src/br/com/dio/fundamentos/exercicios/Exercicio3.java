@@ -6,14 +6,7 @@ public class Exercicio3 {
     static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        double side;
-        double area;
+        double base;
+        double height;
 
-        System.out.print("Informe o tamanho de um dos lados de um quadrado: ");
-        side = input.nextDouble();
-
-        area = side * side;
-
-        System.out.println("A área do quadrado é: " + area);
-    }
 }
