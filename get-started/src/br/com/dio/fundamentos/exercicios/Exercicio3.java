@@ -8,5 +8,16 @@ public class Exercicio3 {
 
         double base;
         double height;
+        double area;
 
+        System.out.print("Digite o valor da base do retângulo: ");
+        base = input.nextDouble();
+
+        System.out.print("Agora digite a altura do retângulo: ");
+        height = input.nextDouble();
+
+        area = (base * height);
+
+        System.out.println("A area total do retângulo é: " + area);
+    }
 }
