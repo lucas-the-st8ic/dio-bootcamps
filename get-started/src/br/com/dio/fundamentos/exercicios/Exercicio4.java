@@ -1,6 +1,5 @@
 package br.com.dio.fundamentos.exercicios;
 
-import java.time.Year;
 import java.util.Scanner;
 
 public class Exercicio4 {
