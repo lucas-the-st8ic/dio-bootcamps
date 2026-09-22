@@ -12,13 +12,30 @@ public class Aula1 {
         System.out.print("Digite sua idade: ");
         int age = input.nextInt();
 
-        if(age >= 18) {
+        System.out.print("Você é emancipado? (Sim/ Não)");
+        boolean isEmancipated = input.next()
+                .equalsIgnoreCase("SIM");
+
+/*       if(age >= 18) {
             System.out.println(name + " você tem " + age + " anos");
             System.out.println("Você pode dirigir.");
         } else {
             System.out.println(name + " tem " + age + " anos");
             System.out.println("Você não pode dirigir.");
+        }*/
+
+
+        if(age >= 18) {
+            System.out.println(name + " você tem " + age + " anos");
+            System.out.println("Você pode dirigir.");
+        } else if (age >= 16 && isEmancipated) {
+            System.out.println(name + "apesar de você ter " + age +
+                    " anos você é emancipado.");
+            System.out.println("Então você pode dirigir.");
+        } else {
+            System.out.println(name + " você não pode dirigir.");
         }
+
 
         System.out.println("Fim do programa.");
     }
