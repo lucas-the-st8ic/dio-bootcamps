@@ -29,7 +29,7 @@ public class Aula1 {
             System.out.println(name + " você tem " + age + " anos");
             System.out.println("Você pode dirigir.");
         } else if (age >= 16 && isEmancipated) {
-            System.out.println(name + "apesar de você ter " + age +
+            System.out.println(name + " apesar de você ter " + age +
                     " anos você é emancipado.");
             System.out.println("Então você pode dirigir.");
         } else {
