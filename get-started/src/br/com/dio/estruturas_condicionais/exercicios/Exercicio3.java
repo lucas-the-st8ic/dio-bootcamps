@@ -16,6 +16,8 @@ public class Exercicio3 {
         Scanner input = new Scanner(System.in);
         int firstNumber = -1;
         int secondNumber = 0;
+        int opcao = 0;
+
 
         while (firstNumber < 0) {
             System.out.print("Digite um número maior ou igual a zero: ");
@@ -34,8 +36,19 @@ public class Exercicio3 {
             System.out.println();
         }
 
+        while (opcao != 1 && opcao != 2) {
+            System.out.println("Você quer visualizar os números pares ou ímpares? ");
+            System.out.print("Digite 1 para impar ou 2 para par: ");
+            opcao = input.nextInt();
+
+            if (opcao != 1 && opcao != 2) System.out.println("Digite uma opção válida");
+        }
+
+
         for(int i = secondNumber; i >= firstNumber; i--) {
-           if (i % 2 == 0) {
+           if (i % 2 == 0 && opcao == 2) {
+               System.out.println(i);
+           } else if (i % 2 != 0 && opcao == 1) {
                System.out.println(i);
            }
         }
